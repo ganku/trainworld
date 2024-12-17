@@ -123,11 +123,11 @@
 			flex-shrink: 1;
 		}
 		
-		@media(max-width: 800px){
-			.mySidebar{
-				display:none;
-			}
-		}
+		/* Hide the sidebar on screens smaller than 768px (example breakpoint for mobile devices) */
+        @media screen and (max-width: 768px) {
+            .xside {
+                display: none; /* Hide the sidebar on mobile devices */
+            }
 		
 		/* Collapisible Cards */
 		.collapsible {
