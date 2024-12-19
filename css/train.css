@@ -105,8 +105,8 @@
         }
 		
 		.item{
-			width: 200px;
-			height: 200px;
+			width: 180px;
+			height: 210px;
 			background-color: #edf2f4;
 			border-radius: 10px;
 			color: #d90429;
@@ -123,11 +123,7 @@
 			flex-shrink: 1;
 		}
 		
-		/* Hide the sidebar on screens smaller than 768px (example breakpoint for mobile devices) */
-        @media screen and (max-width: 768px) {
-            .xside {
-                display: none; /* Hide the sidebar on mobile devices */
-            }
+		
 		
 		/* Collapisible Cards */
 		.collapsible {
@@ -154,3 +150,9 @@
 		}
 
 /* End Collaisible cards */
+
+/* Hide the sidebar on screens smaller than 768px (example breakpoint for mobile devices) */
+        @media screen and (max-width: 768px) {
+            .xside {
+                display: none; /* Hide the sidebar on mobile devices */
+            }
