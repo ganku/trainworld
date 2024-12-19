@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Train Wiki</title>
+	<link rel="stylesheet" href="../css/train.css">
+
+</head>
+<body>
+    <header>
+        <h1>World Train Travel</h1>
+        <div class="horizontal-nav">
+            <a href="../index.html">Home</a>
+            <a href="#section2">Destinations</a>
+            <a href="#section3">Schedules</a>
+            <a href="#section4">About Us</a>
+			<a href="javascript:void(0)" onclick="w3_open()"><img src="../images/menu.png"" alt="open" width="20" height="20"></a>
+        </div>
+    </header>
+    <div class="content-wrapper">
+        <!-- Side Nav -->
+        
+		<!-- End side Nav -->
+        <main>
+            <h2>Coastal Line</h2>
+			<section id="section1">
+				<p>The train ride from Colombo to Galle along Sri Lanka's scenic coastal railway line is a journey of 
+				captivating beauty and cultural charm. Departing from the bustling heart of Colombo, the train hugs the 
+				island's western shoreline, offering uninterrupted views of the Indian Ocean's azure waters. 
+
+As the train glides southward, it passes golden sandy beaches fringed with swaying palm trees and quaint fishing 
+villages where traditional catamarans dot the shores. The rhythmic sound of the waves crashing against the coast 
+accompanies travelers, creating a soothing backdrop to the journey.
+
+Stops at charming towns like Mount Lavinia and Bentota reveal glimpses of Sri Lanka's laid-back coastal life. Here, 
+colonial-era architecture, bustling markets, and the aroma of fresh seafood wafting through the air invite passengers 
+to pause and explore.
+
+Further south, the scenery transitions into lush greenery with occasional glimpses of lagoons and estuaries teeming 
+with birdlife. As the train nears Galle, the striking silhouette of the historic Galle Fort comes into view—a UNESCO 
+World Heritage Site with its Dutch colonial charm, cobblestone streets, and vibrant cultural heritage.
+
+The journey concludes at Galle, where the blend of tropical beauty and historic allure leaves travelers enchanted. 
+Whether gazing at the endless horizon or absorbing the local rhythms of life at each stop, the Colombo to Galle 
+train ride is a serene and unforgettable voyage along Sri Lanka's picturesque southern coast.
+			</section>
+			<section id="section2">
+				<p><h2>Itinerary:</h2><a href="javascript:void(0)" onclick="expandAll()">Expand All</a></p>
+					<button type="button" class="collapsible">Day 1 : Colombo</button>
+					<div class="content">
+						<p>
+							We start our journey in the foot-hills of The Himalayas.Jammu Tawai is in on the banks of the
+							Tawai river. Try the unique cuisine of Jammu, Rajma Chawal and not to miss Khaladi sandwich.
+							Proceed to Katra.
+						</p>
+						Train 16318 : Himsagar Express , Tuesdays Katra dep: 22:25
+					</div>
+					<button type="button" class="collapsible">Day 2 : Galle</button>
+					<div class="content">
+					  <p>Arrive in Ludhiana at the bustling heart of Punjab at 5:40 am. Known as the "Manchester of India." 
+					  Situated on the banks of the Sutlej River, the city is famous for its thriving textile industry. 
+					  Explore key attractions such as the historic Lodhi Fort, the rural life exhibits at Punjab Agricultural University Museum, 
+					  and the serene Nehru Rose Garden. Don't miss trying Ludhiana's signature delicacies like butter chicken, 
+					  sarson da saag with makki di roti, and the ever-popular lassi.</p>
+					</div>
+					<button type="button" class="collapsible">Day 3 : Galle</button>
+					<div class="content">
+					  <p>Immerse yourself in the vibrant capital of India, New Delhi, a city where history and modernity 
+					  blend seamlessly. Key attractions include the majestic Red Fort, the iconic India Gate, and the 
+					  serene Lotus Temple. Savor the flavors of Delhi’s street food, including chole bhature, parathas 
+					  from Chandni Chowk, and the famous butter chicken. </p>
+					</div>
+					<button type="button" class="collapsible">Day 4 : Mattara/Beliatta</button>
+					<div class="content">
+					  <p>Step back in time with a visit to Old Delhi, a historic hub of culture and tradition. Wander through the bustling lanes of Chandni Chowk, explore the grandeur of Jama Masjid, and visit the vibrant spice market at Khari Baoli. Relish local delicacies like kachori-aloo, daulat ki chaat, and kebabs that capture the essence of this lively neighborhood. </p>
+					</div>
+					<button type="button" class="collapsible">Day 5 : Beliatta</button>
+					<div class="content">
+					  <p>Visit Mathura, the birthplace of Lord Krishna, steeped in spiritual significance and vibrant culture. Key attractions include the Shri Krishna Janmabhoomi Temple, Vishram Ghat, and the enchanting Govardhan Hill. Don't miss the delectable pedas, Mathura's signature sweet, and a taste of its traditional thandai. </p>
+					</div>
+				
+			</section>
+        </main>
+    </div>
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+	
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+function expandAll() {
+  var contents = document.getElementsByClassName("content"); // Get all elements with the 'content' class
+  for (var i = 0; i < contents.length; i++) {
+    contents[i].style.display = "block"; // Set display to 'block'
+  }
+}
+
+
+
+</script>
+
+</body>
+</html>
